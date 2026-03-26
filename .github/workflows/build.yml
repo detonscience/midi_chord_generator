@@ -27,7 +27,7 @@ jobs:
 
     - name: Build EXE
       run: |
-        pyinstaller --onefile midi_chord_generator.py
+        pyinstaller --onefile .github/workflows/midi_chord_generator.py
 
     - name: Upload EXE artifact
       uses: actions/upload-artifact@v4
